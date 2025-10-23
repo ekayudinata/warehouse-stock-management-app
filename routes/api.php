@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\V1\ProductController as V1ProductController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +27,9 @@ Route::prefix('v1')->group(function () {
             'timestamp' => now()->toDateTimeString()
         ]);
     });
+
+    // Auth routes
+    Route::post('/login', [AuthController::class, 'login']);
 
     // Product routes
     Route::prefix('products')->group(function () {
