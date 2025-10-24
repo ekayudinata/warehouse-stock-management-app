@@ -105,8 +105,8 @@ Before you begin, ensure you have the following installed:
 
 ## 🌐 Access the Application
 
-- **Web Application**: http://localhost:8000
-- **PHPMyAdmin**: http://localhost:8080
+- **Web Application**: http://localhost:8090
+- **PHPMyAdmin**: http://localhost:8890
   - Username: root
   - Password: password (as defined in docker-compose.yml)
 
