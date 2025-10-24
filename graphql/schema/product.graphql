@@ -25,5 +25,5 @@ type Product {
 # Query
 type Query {
     # all products
-    allProducts: [Product] @all
+    products: [Product] @all
 }
