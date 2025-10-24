@@ -35,6 +35,13 @@ Route::prefix('v1')->group(function () {
     Route::prefix('products')->group(function () {
         Route::get('/', [V1ProductController::class, 'index'])->name('api.v1.products.index');
     });
+
+    // Protected routes (require authentication)
+    Route::middleware('auth:sanctum')->group(function () {
+        // Transaction routes
+        Route::post('/transactions', [\App\Http\Controllers\Api\V1\TransactionController::class, 'store'])
+            ->name('api.v1.transactions.store');
+    });
 });
 
 // Default route (legacy or latest version)
