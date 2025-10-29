@@ -38,6 +38,14 @@ Route::prefix('v1')->group(function () {
 
     // Protected routes (require authentication)
     Route::middleware('auth:sanctum')->group(function () {
+        // Product routes
+        Route::post('/products', [V1ProductController::class, 'store'])
+            ->name('api.v1.products.store');
+        Route::put('/products/{product}', [V1ProductController::class, 'update'])
+            ->name('api.v1.products.update');
+        Route::delete('/products/{product}', [V1ProductController::class, 'destroy'])
+            ->name('api.v1.products.destroy');
+
         // Transaction routes
         Route::post('/transactions', [\App\Http\Controllers\Api\V1\TransactionController::class, 'store'])
             ->name('api.v1.transactions.store');
