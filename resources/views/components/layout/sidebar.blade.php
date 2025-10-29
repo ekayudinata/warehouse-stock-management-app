@@ -24,7 +24,7 @@
             <i class="fas fa-exchange-alt mr-2 w-5"></i> Transactions
         </a>
         <a href="#graphql-api" class="nav-link flex items-center">
-            <i class="fas fa-warehouse mr-2 w-5"></i> Example GraphQL
+            <i class="fas fa-warehouse mr-2 w-5"></i> Example of GraphQL
         </a>
 
         <a href="#error-handling" class="nav-link flex items-center">
