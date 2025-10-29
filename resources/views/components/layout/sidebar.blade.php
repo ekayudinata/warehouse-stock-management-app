@@ -14,26 +14,27 @@
         <div class="mt-4 text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 mb-2">
             API Endpoints
         </div>
+         <a href="#authentication" class="nav-link flex items-center">
+            <i class="fas fa-key mr-2 w-5"></i> Authentication
+        </a>
         <a href="#products" class="nav-link flex items-center">
             <i class="fas fa-boxes mr-2 w-5"></i> Products
-        </a>
-        <a href="#inventory" class="nav-link flex items-center">
-            <i class="fas fa-warehouse mr-2 w-5"></i> Inventory
         </a>
         <a href="#transactions" class="nav-link flex items-center">
             <i class="fas fa-exchange-alt mr-2 w-5"></i> Transactions
         </a>
-        <a href="#authentication" class="nav-link flex items-center">
-            <i class="fas fa-key mr-2 w-5"></i> Authentication
+        <a href="#graphql-api" class="nav-link flex items-center">
+            <i class="fas fa-warehouse mr-2 w-5"></i> Example GraphQL
         </a>
+
         <a href="#error-handling" class="nav-link flex items-center">
             <i class="fas fa-exclamation-circle mr-2 w-5"></i> Error Handling
         </a>
-        <a href="#rate-limiting" class="nav-link flex items-center">
+        <!-- <a href="#rate-limiting" class="nav-link flex items-center">
             <i class="fas fa-tachometer-alt mr-2 w-5"></i> Rate Limiting
         </a>
         <a href="#support" class="nav-link flex items-center">
             <i class="fas fa-question-circle mr-2 w-5"></i> Support
-        </a>
+        </a> -->
     </nav>
 </div>

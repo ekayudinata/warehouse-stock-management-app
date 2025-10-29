@@ -8,15 +8,15 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-6">
             <div class="bg-blue-50 p-4 rounded-lg">
                 <h3 class="font-semibold text-blue-800 mb-2">Products Management</h3>
-                <p class="text-sm text-gray-600">Create, read, update, and delete product information including SKUs, descriptions, and categories.</p>
+                <p class="text-sm text-gray-600">Create, read, update, and delete product information including SKUs, and descriptions.</p>
             </div>
             <div class="bg-green-50 p-4 rounded-lg">
                 <h3 class="font-semibold text-green-800 mb-2">Inventory Control</h3>
-                <p class="text-sm text-gray-600">Track stock levels, locations, and manage inventory across multiple warehouses.</p>
+                <p class="text-sm text-gray-600">Track stock levels for each product.</p>
             </div>
             <div class="bg-purple-50 p-4 rounded-lg">
-                <h3 class="font-semibold text-purple-800 mb-2">Transaction Logging</h3>
-                <p class="text-sm text-gray-600">Record all stock movements including receipts, issues, and adjustments with timestamps.</p>
+                <h3 class="font-semibold text-purple-800 mb-2">Transaction</h3>
+                <p class="text-sm text-gray-600">Record all stock movements including receipts and orders.</p>
             </div>
         </div>
     </div>

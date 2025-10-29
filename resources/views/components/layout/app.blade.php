@@ -52,7 +52,8 @@
             const sidebar = document.getElementById('sidebar');
             const mobileOverlay = document.getElementById('mobile-overlay');
             const navLinks = document.querySelectorAll('.nav-link');
-            const sections = document.querySelectorAll('.documentation-section');
+            // Target all elements with IDs that match the navigation links
+            const sections = document.querySelectorAll('section[id]');
             let isMenuOpen = false;
 
             // Debug: Log elements to console
@@ -64,7 +65,7 @@
             function toggleMenu() {
                 isMenuOpen = !isMenuOpen;
                 console.log('Toggle menu called. New state:', isMenuOpen);
-                
+
                 if (isMenuOpen) {
                     sidebar.classList.remove('-translate-x-full');
                     mobileOverlay.classList.remove('hidden');
@@ -88,7 +89,7 @@
                         e.preventDefault();
                         const targetElement = document.querySelector(targetId);
                         if (targetElement) {
-                            targetElement.scrollIntoView({ 
+                            targetElement.scrollIntoView({
                                 behavior: 'smooth',
                                 block: 'start'
                             });
@@ -132,10 +133,10 @@
                 if (window.innerWidth < 768) {
                     sidebar.classList.add('-translate-x-full');
                 }
-                
+
                 // Add resize event listener
                 window.addEventListener('resize', handleResize);
-                
+
                 // Highlight active link
                 highlightActiveLink();
             }
@@ -164,7 +165,7 @@
 
             // Initialize everything
             init();
-            
+
             // Add scroll event listener for active link highlighting
             window.addEventListener('scroll', highlightActiveLink);
         });
