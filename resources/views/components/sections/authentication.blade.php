@@ -15,8 +15,13 @@
             <pre><code>curl -X POST http://localhost:8000/api/auth/login \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
-  -d '{"email": "admin@example.com", "password": "yourpassword"}'</code></pre>
+  -d '{"email": "testUser@example.com", "password": "password"}'</code></pre>
         </div>
+        <p class="text-sm text-gray-600 mt-2">
+            <span class="font-medium">Test User Credentials:</span><br>
+            Email: testUser@example.com<br>
+            Password: password
+        </p>
 
         <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Using the API Token</h3>
         <p class="text-gray-700 mb-2">
